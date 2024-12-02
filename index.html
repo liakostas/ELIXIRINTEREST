@@ -106,21 +106,17 @@
         <div class="text-content">
             <h1>Welcome to Elixir</h1>
             <p>Experience the best of NYC nightlife</p>
-            <button class="cta-button" onclick="window.location.href='waitlist.html'">Get Started</button>
+            <form id="signupForm" class="signup-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <button type="submit" class="cta-button">Join the Waitlist</button>
+            </form>
         </div>
         <img src="hero-image.jpg" alt="Vibrant nightclub scene" class="hero-image">
     </div>
-    <section class="signup-section">
-    <form class="signup-form" action="/api/signup" method="POST" id="signupForm">
-        <h2>Sign Up for Early Access</h2>
-        <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <button type="submit" class="cta-button">Join the Waitlist</button>
-    </form>
-</section>
 </body>
 </html> 
